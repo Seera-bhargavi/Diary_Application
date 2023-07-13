@@ -1,0 +1,28 @@
+<%-include('header')-%>
+
+<%-include('navbar')-%>
+
+<div class="center-div justify-content-center mt-5">
+    <div class="container w-50 border py-5">
+        <div class="title font-weight bold text-center">
+            <h2>ADD DIARY</h2>
+        </div>
+        <form action="/add-to-diary" method="post" mt-2>
+            <div class="form-group mt-2">
+                <label>Title</label>
+                <input type="text" class="form-control" name="title">
+            </div>
+            <div class="form-group mt-2">
+                <label>Description</label>
+                <textarea class="form-control" rows="4" style="resize:none" name="description"></textarea>
+            </div>
+            <div class="form-group mt-2">
+                <label>Date</label>
+                <input type="date" class="form-control" name="date">
+            </div>
+            <button type="submit" class="btn mt-4" style="color:aliceblue;background-color:rgb(105,67,167);border:none">Add to Diary</button>
+
+        </form>
+    </div>
+</div>
+<%-include('footer')-%>

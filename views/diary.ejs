@@ -1,0 +1,21 @@
+<%-include('header')-%>
+
+<%-include('navbar')-%>
+
+  <div class="text-center center-div">
+    <div class="container border py-3 my-5">
+      <div class="title pb-3">
+        <div class="h4 font-weight-bold">
+          <%=diary_details.title%>
+        </div>
+      </div>
+      <div class="p text-start ps-5"><%=diary_details.date%>,</div><br>
+      <div class="p text-start ps-5">
+        <%=diary_details.description%>
+      </div>
+      
+      <a href="/edit-diary/<%=diary_details._id%>" class="float-end" style="font-size: 20px;color:grey;float: inline-end;"><i class="fas fa-edit"></i></a>
+    </div>
+  </div>
+
+  <%-include('footer')-%>
